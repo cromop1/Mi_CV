@@ -1,0 +1,877 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículum de Bruno Segura · Desarrollador Python/Django orientado a ciberseguridad"
+    />
+    <title>Bruno Segura | CV Ciberseguridad</title>
+
+    <link rel="shortcut icon" href="" type="favicon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#0c192c" />
+  </head>
+
+  <body class="intro-active">
+    <div class="intro-overlay active" data-intro-overlay>
+      <div class="intro-icon-stack only-icons">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+          class="intro-icon linux"
+          alt="Linux logo"
+          loading="lazy"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          class="intro-icon python"
+          alt="Python logo"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <div style="display: grid">
+              <img src="./images/yo.jpeg" alt="Retrato de Bruno Segura" width="80" style="border-radius: 20px" />
+            </div>
+          </figure>
+
+          <div class="info-content">
+            <p class="eyebrow">Currículum · Ciberseguridad</p>
+            <h1 class="name" title="Bruno Segura">Bruno Segura</h1>
+            <p class="title">Desarrollador Python/Django</p>
+            <p class="tagline">Backend Developer (Python/Django) · Ciberseguridad · Pentesting en formación</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Ver datos de contacto</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/gmail.svg" alt="Icono mail" class="contact-icon" loading="lazy" />
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:brunosegura755@gmail.com" class="contact-link">brunosegura755@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/signal.svg" alt="Icono teléfono" class="contact-icon" loading="lazy" />
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Teléfono</p>
+                <a href="tel:+54351155301904" class="contact-link">+54 (351) 155301904</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/googlecalendar.svg" alt="Icono calendario" class="contact-icon" loading="lazy" />
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Cumpleaños</p>
+                <time datetime="2007-09-12">12 de septiembre de 2007</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/googlemaps.svg" alt="Icono ubicación" class="contact-icon" loading="lazy" />
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Ubicación</p>
+                <address>Córdoba, Argentina</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item placeholder">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <span>LinkedIn · disponible a solicitud</span>
+            </li>
+            <li class="social-item placeholder">
+              <ion-icon name="logo-github"></ion-icon>
+              <span>GitHub · repositorios privados académicos</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link data-target="perfil">
+                <ion-icon name="person-outline"></ion-icon>
+                <span>Perfil</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-target="trayectoria">
+                <ion-icon name="school-outline"></ion-icon>
+                <span>Trayectoria</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-target="habilidades">
+                <ion-icon name="shield-outline"></ion-icon>
+                <span>Certificados</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-target="proyectos">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span>Proyectos</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link data-target="contacto">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span>Contacto</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="perfil">
+          <header>
+            <h2 class="h2 article-title">Perfil profesional</h2>
+          </header>
+
+          <section class="hero-intro">
+            <p>
+              Desarrollador Python y Django enfocado en construir servicios backend robustos con visión de ciberseguridad full-stack. Combino hardening, automatización y prácticas de pentesting junior con experiencias reales como la plataforma Sabueso Feliz (sabuesofeliz.sbs) para una veterinaria.
+              A esto le sumo campañas de phishing profesional controlado (simulaciones de spread phishing y concientización), ejercicios forenses y análisis de malware —entre otras iniciativas de ofensiva y defensa— que aterrizan en guías accionables para equipos técnicos.
+            </p>
+            <p>
+              Aplico lo aprendido en la especialidad de Programación del Instituto Técnico Salesiano Villada, una de las instituciones técnicas mejor valoradas de Córdoba (top 1–2), para resolver problemas reales, documentar procesos y alinear seguridad con negocio. Estoy construyendo un perfil sólido para roles de pentester, analista SOC o desarrollador backend orientado a seguridad.
+            </p>
+            <ul class="hero-metrics">
+              <li>
+                <p class="metric-number">+3</p>
+                <p class="metric-label">Proyectos web productivos</p>
+              </li>
+              <li>
+                <p class="metric-number">4</p>
+                <p class="metric-label">Certificaciones completadas</p>
+              </li>
+              <li>
+                <p class="metric-number">Labs</p>
+                <p class="metric-label">CTFs y explotación controlada</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="aligned-facts">
+            <article class="fact-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Icono Python" loading="lazy" />
+              <div>
+                <p class="fact-label">Rol principal</p>
+                <p class="fact-value">Backend Python/Django orientado a ciberseguridad y automatización defensiva.</p>
+              </div>
+            </article>
+            <article class="fact-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Icono Django" loading="lazy" />
+              <div>
+                <p class="fact-label">Ruta 2025</p>
+                <p class="fact-value">Django en producción: despliegues end-to-end con foco en seguridad y observabilidad.</p>
+              </div>
+            </article>
+            <article class="fact-card">
+              <img src="./images/itsv.png" alt="Icono educación" loading="lazy" />
+              <div>
+                <p class="fact-label">Formación 2019</p>
+                <p class="fact-value">Ingreso al ITS Villada · cursando 6.º año técnico de programación.</p>
+              </div>
+            </article>
+            <article class="fact-card">
+              <div>
+                <p class="fact-label">Objetivo profesional</p>
+                <p class="fact-value">
+                  Continuar estudios universitarios en ciberseguridad o integrarme a áreas gubernamentales de seguridad, infraestructura, investigación o inteligencia.
+                </p>
+              </div>
+            </article>
+          </section>
+
+
+
+          <section class="subpage-grid" aria-label="Subpáginas destacadas">
+            <div class="subpage-grid-title">
+              <h3 class="h3">Atajos</h3>
+              <p>Accede rápidamente a mi recorrido completo.</p>
+            </div>
+            <div class="subpage-grid-list">
+              <button class="subpage-card" type="button" data-subpage-target="trayectoria">
+                <ion-icon name="book-outline"></ion-icon>
+                <div>
+                  <p class="subpage-label">Formación y actividades</p>
+                  <p class="subpage-text">Resumen académico y experiencias colaborativas.</p>
+                </div>
+              </button>
+              <button class="subpage-card" type="button" data-subpage-target="habilidades">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <div>
+                  <p class="subpage-label">Habilidades y certificaciones</p>
+                  <p class="subpage-text">Stack técnico, competencias y cursos clave.</p>
+                </div>
+              </button>
+              <button class="subpage-card" type="button" data-subpage-target="proyectos">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <div>
+                  <p class="subpage-label">Proyectos destacados</p>
+                  <p class="subpage-text">Apps reales, laboratorios y prototipos.</p>
+                </div>
+              </button>
+            </div>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">Áreas de enfoque</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend seguro con Python/Django</h4>
+                  <p class="service-item-text">
+                    Diseño APIs, paneles administrativos y automatizaciones cuidando autenticación, ORM, logging y protección de datos sensibles.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Hardening y seguridad defensiva</h4>
+                  <p class="service-item-text">
+                    Refuerzo servidores Linux, aplico gestión de permisos y realizo revisiones de configuración para reducir superficie de ataque.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Pentesting en formación</h4>
+                  <p class="service-item-text">
+                    Desarrollo laboratorios, exploits de práctica y análisis de malware educativo para comprender tácticas ofensivas de manera responsable.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="code-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Automatización con scripting</h4>
+                  <p class="service-item-text">
+                    Creo scripts en Python para auditorías, scraping de inteligencia y soporte a equipos técnicos en operaciones diarias.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="interests">
+            <h3 class="h3 service-title">Intereses profesionales</h3>
+            <ul class="tag-list icon-list">
+              <li>
+                <ion-icon name="shield-outline"></ion-icon>
+                <span>Ciberseguridad ofensiva (pentesting, CTFs, explotación controlada)</span>
+              </li>
+              <li>
+                <ion-icon name="terminal-outline"></ion-icon>
+                <span>Automatización con Python y scripting para equipos de seguridad</span>
+              </li>
+              <li>
+                <ion-icon name="construct-outline"></ion-icon>
+                <span>Desarrollo de herramientas internas (scanners, dashboards, bots)</span>
+              </li>
+              <li>
+                <ion-icon name="sparkles-outline"></ion-icon>
+                <span>Aprendizaje continuo en certificaciones de ciberseguridad</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="resume" data-page="trayectoria">
+          <header>
+            <h2 class="h2 article-title">Trayectoria</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <img class="section-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/microsoftacademic.svg" alt="Icono formación" loading="lazy" />
+              <h3 class="h3">Formación</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Instituto Técnico Salesiano Villada (ITS Villada) – Córdoba, Argentina</h4>
+                <span>2021 – Presente · Técnico en Programación</span>
+                <p class="timeline-text">
+                  Instituto católico-técnico con larga trayectoria en la formación de jóvenes técnicos. Combina práctica intensiva con valores humanos para formar buenos cristianos, honrados ciudadanos y eficientes técnicos. La especialidad en Programación articula con empresas y universidades, lo que facilita la inserción laboral y la continuidad académica.
+                </p>
+                <ul class="timeline-details">
+                  <li>
+                    <ion-icon name="play-outline"></ion-icon>
+                    <span>Proyectos integradores y trabajos prácticos que resuelven necesidades reales.</span>
+                  </li>
+                  <li>
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>Trabajo colaborativo aplicando control de versiones, documentación y retroalimentación constante.</span>
+                  </li>
+                  <li>
+                    <ion-icon name="layers-outline"></ion-icon>
+                    <span>Base sólida en programación estructurada, orientación a objetos y bases de datos.</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Trayectoria en tecnologías clave</h4>
+                <span>2025 · Ruta Django</span>
+                <p class="timeline-text">
+                  Consolidación de proyectos productivos con Django y Python, orientados a backend seguro y despliegues controlados.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ingreso al ITS Villada</h4>
+                <span>2019 · Inicio de formación técnica</span>
+                <p class="timeline-text">
+                  Comencé la especialidad en programación del ITS Villada incentivando la base lógica, trabajo en equipo y metodologías aplicadas.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <img class="section-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Icono experiencia" loading="lazy" />
+              <h3 class="h3">Actividades y experiencia aplicada</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Proyectos personales y académicos</h4>
+                <span>2022 – Actualidad</span>
+                <p class="timeline-text">
+                  Diseño soluciones web con Python/Django y automatizaciones pensadas para entornos seguros. Prioriza la trazabilidad, la gestión de credenciales y despliegues documentados.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Equipos colaborativos ITS Villada</h4>
+                <span>2021 – Actualidad</span>
+                <p class="timeline-text">
+                  Trabajo en equipos académicos con buenas prácticas de versionado, code reviews y metodologías ágiles adaptadas a proyectos estudiantiles.
+                </p>
+              </li>
+              <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Ruta hacia ciberseguridad</h4>
+              <span>Actual</span>
+              <p class="timeline-text">
+                Construcción de un portfolio orientado a futuros roles como pentester, analista SOC o desarrollador backend con foco en seguridad ofensiva y defensiva.
+              </p>
+              <p class="timeline-text highlight">
+                Meta: ingresar a una universidad con orientación en ciberseguridad o integrar un departamento gubernamental de seguridad, infraestructura, investigación o inteligencia.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+        <article class="skills-page" data-page="habilidades">
+          <header>
+            <h2 class="h2 article-title">Habilidades y certificaciones</h2>
+          </header>
+
+          <section class="certifications">
+            <div class="title-wrapper">
+              <img class="section-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg" alt="Icono certificaciones" loading="lazy" />
+              <div>
+                <h3 class="h3">Certificaciones y cursos</h3>
+                <p>Resumen ejecutivo de las credenciales que respaldan mi perfil. Cada tarjeta incluye acceso directo a la evidencia.</p>
+              </div>
+            </div>
+            <div class="certification-grid">
+              <article class="cert-card status-completed">
+                <span class="cert-status">Completado</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="./images/MundosE.jpg" alt="Icono Mundos E UTN" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">Mundos E · UTN</p>
+                    <h4>Diplomatura en Ciberseguridad</h4>
+                  </div>
+                </div>
+                <p>Fundamentos de seguridad, análisis de riesgos, respuesta ante incidentes y buenas prácticas de protección.</p>
+                <ul class="cert-details">
+                  <li>Diseñé un plan integral de gestión de incidentes para pymes.</li>
+                  <li>Documenté controles técnicos y administrativos para auditorías.</li>
+                </ul>
+                <div class="cert-proof">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                  <span>
+                    Verificable en
+                    <a href="https://certificados.mundose.com/" target="_blank" rel="noopener">certificados.mundose.com</a>
+                    con el código <strong>47304111</strong>.
+                  </span>
+                </div>
+              </article>
+              <article class="cert-card status-completed">
+                <span class="cert-status">Completado</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="./images/cisco2.png" alt="Icono Cisco" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">Cisco Networking Academy</p>
+                    <h4>Introduction to Cybersecurity</h4>
+                  </div>
+                </div>
+                <p>Conceptos base de redes, amenazas comunes y estrategia de seguridad para organizaciones modernas.</p>
+                <ul class="cert-details">
+                  <li>Mapeé amenazas frecuentes para proyectos educativos y personales.</li>
+                  <li>Implementé recomendaciones básicas de segmentación y monitoreo.</li>
+                </ul>
+                <div class="cert-proof">
+                  <ion-icon name="link-outline"></ion-icon>
+                  <span>
+                    Documento emitido por Cisco disponible en
+                    <a
+                      href="https://www.linkedin.com/in/bruno-segura-1967a0315/details/certifications/126133942/multiple-media-viewer/?profileId=ACoAAFAHTwIBwn2pZ30IB3lQM_euvJfaroOJLSc&amp;treasuryMediaId=1758915241764&amp;type=DOCUMENT"
+                      target="_blank"
+                      rel="noopener"
+                      >LinkedIn</a
+                    >.
+                  </span>
+                </div>
+              </article>
+              <article class="cert-card status-completed">
+                <span class="cert-status">Completado</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="./images/cisco2.png" alt="Icono Cisco" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">Cisco Networking Academy</p>
+                    <h4>Ethical Hacking / Offensive Security</h4>
+                  </div>
+                </div>
+                <p>Fases de pentesting, reconocimiento, explotación y reporte responsable en entornos controlados.</p>
+                <ul class="cert-details">
+                  <li>Construí laboratorios de exploits y payloads personalizados.</li>
+                  <li>Elaboré reportes ejecutivos con hallazgos priorizados.</li>
+                </ul>
+                <div class="cert-proof">
+                  <ion-icon name="link-outline"></ion-icon>
+                  <span>
+                    Evidencia incluida en la credencial pública de
+                    <a
+                      href="https://www.linkedin.com/in/bruno-segura-1967a0315/details/certifications/126133942/multiple-media-viewer/?profileId=ACoAAFAHTwIBwn2pZ30IB3lQM_euvJfaroOJLSc&amp;treasuryMediaId=1758915241764&amp;type=DOCUMENT"
+                      target="_blank"
+                      rel="noopener"
+                      >LinkedIn</a
+                    >.
+                  </span>
+                </div>
+              </article>
+              <article class="cert-card status-completed">
+                <span class="cert-status">Completado</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="./images/cisco2.png" alt="Icono Cisco" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">Cisco Networking Academy</p>
+                    <h4>Python Essentials</h4>
+                  </div>
+                </div>
+                <p>Programación en Python, estructuras de datos, lógica y scripting para automatización.</p>
+                <ul class="cert-details">
+                  <li>Automatización de rutinas de análisis de logs y scraping.</li>
+                  <li>Creación de utilidades CLI para equipos académicos.</li>
+                </ul>
+                <div class="cert-proof">
+                  <ion-icon name="link-outline"></ion-icon>
+                  <span>
+                    Certificado respaldado por Cisco y disponible junto a las otras credenciales en
+                    <a
+                      href="https://www.linkedin.com/in/bruno-segura-1967a0315/details/certifications/126133942/multiple-media-viewer/?profileId=ACoAAFAHTwIBwn2pZ30IB3lQM_euvJfaroOJLSc&amp;treasuryMediaId=1758915241764&amp;type=DOCUMENT"
+                      target="_blank"
+                      rel="noopener"
+                      >LinkedIn</a
+                    >.
+                  </span>
+                </div>
+              </article>
+              <article class="cert-card status-progress">
+                <span class="cert-status">En curso</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Icono Google" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">Google / Coursera</p>
+                    <h4>Certificado Profesional en Ciberseguridad</h4>
+                  </div>
+                </div>
+                <p>Fundamentos SOC, análisis de riesgos y respuesta a incidentes con preparación para CompTIA Security+.</p>
+                <ul class="cert-details">
+                  <li>Laboratorios guiados con enfoque en documentación y escalamiento.</li>
+                  <li>Entrega periódica de estudios de caso y reportes técnicos.</li>
+                </ul>
+              </article>
+              <article class="cert-card status-upcoming">
+                <span class="cert-status">Objetivo</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/comptia.svg" alt="Icono CompTIA" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">CompTIA</p>
+                    <h4>Security+</h4>
+                  </div>
+                </div>
+                <p>Ruta planificada para validar conocimientos globales en seguridad y operaciones SOC.</p>
+                <ul class="cert-details">
+                  <li>Estudio con foco en dominios de amenazas, arquitectura y respuesta.</li>
+                  <li>Laboratorios propios alineados al examen SY0-701.</li>
+                </ul>
+              </article>
+              <article class="cert-card status-upcoming">
+                <span class="cert-status">Objetivo</span>
+                <div class="cert-card-header">
+                  <img class="cert-logo" src="./images/ejpt.png" alt="Icono INE eLearnSecurity" loading="lazy" />
+                  <div>
+                    <p class="cert-provider">eLearnSecurity / INE</p>
+                    <h4>eJPT</h4>
+                  </div>
+                </div>
+                <p>Preparación práctica para demostrar habilidades ofensivas junior en entornos de laboratorio.</p>
+                <ul class="cert-details">
+                  <li>Construcción de escenarios de explotación en VMs y plataformas CTF.</li>
+                  <li>Consolidación de informes profesionales antes de cada entrega.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="skill-matrix">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h4>Lenguajes y tecnologías</h4>
+              </div>
+              <ul class="skill-tags">
+                <li>Python para backend, scripting y automatización.</li>
+                <li>Django (modelos, vistas, templates, autenticación, ORM).</li>
+                <li>HTML, CSS y JavaScript para front básico/intermedio.</li>
+                <li>Git y GitHub para versionado, ramas y colaboración.</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <ion-icon name="shield-outline"></ion-icon>
+                <h4>Ciberseguridad</h4>
+              </div>
+              <ul class="skill-tags">
+                <li>Fundamentos de redes y seguridad defensiva.</li>
+                <li>Pentesting inicial: escaneo, reconocimiento y pruebas de vulnerabilidades.</li>
+                <li>Exploración de exploits y malware educativo (análisis de ransomware).</li>
+                <li>Seguridad en aplicaciones web: inyección, XSS y configuraciones seguras.</li>
+                <li>Uso básico de Linux orientado a ciberseguridad.</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <ion-icon name="clipboard-outline"></ion-icon>
+                <h4>Herramientas y metodologías</h4>
+              </div>
+              <ul class="skill-tags">
+                <li>Entornos virtuales en Python y gestión de dependencias.</li>
+                <li>Repositorios remotos y flujos colaborativos.</li>
+                <li>Documentación técnica y seguimiento de tareas.</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <ion-icon name="people-circle-outline"></ion-icon>
+                <h4>Habilidades blandas</h4>
+              </div>
+              <ul class="skill-tags">
+                <li>Trabajo en equipo y comunicación técnica.</li>
+                <li>Resolución de problemas con mentalidad analítica.</li>
+                <li>Aprendizaje autónomo y constante.</li>
+                <li>Responsabilidad y proactividad en cada entrega.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="languages">
+            <h3 class="h3">Idiomas</h3>
+            <ul class="languages-list">
+              <li>
+                <ion-icon name="language-outline"></ion-icon>
+                <span>Español · Nativo</span>
+              </li>
+              <li>
+                <ion-icon name="book-outline"></ion-icon>
+                <span>Inglés · Intermedio (documentación técnica y cursos online)</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="proyectos">
+          <header>
+            <h2 class="h2 article-title">Proyectos</h2>
+          </header>
+
+          <section class="projects">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Todos</div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+
+                <li class="select-item">
+                  <button data-select-item>Back-end</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Ciberseguridad</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="filter-list">
+
+              <li class="filter-item">
+                <button data-filter-btn>Back-end</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Ciberseguridad</button>
+              </li>
+            </ul>
+
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="back-end">
+                <article class="project-card">
+                  <header class="project-card-header">
+                    <p class="project-context">Proyecto real · Django</p>
+                    <h3 class="project-title">Sabueso Feliz – Sistema de gestión para veterinaria</h3>
+                    <p class="project-stack">Stack: Django, Python, HTML, CSS, base de datos relacional</p>
+                  </header>
+                  <p>
+                    Aplicación web completa para administrar una veterinaria con foco en disponibilidad, seguridad de datos clínicos y experiencia intuitiva para el personal.
+                  </p>
+                  <ul class="project-highlights">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Registro detallado de pacientes (mascotas) y dueños.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Gestión de turnos, agenda, recordatorios y alertas.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Historial clínico, inventario de fármacos e insumos.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Funciones administrativas y reportes para la operación diaria.</span>
+                    </li>
+                  </ul>
+                  <div class="project-meta">
+                    <span class="project-category">
+                      <ion-icon name="globe-outline"></ion-icon>
+                      Aplicación web
+                    </span>
+                    <a href="https://sabuesofeliz.sbs" target="_blank" rel="noreferrer" class="project-link">
+                      <ion-icon name="open-outline"></ion-icon>
+                      Visitar proyecto
+                    </a>
+                  </div>
+                </article>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="back-end">
+                <article class="project-card">
+                  <header class="project-card-header">
+                    <p class="project-context">Proyecto personal</p>
+                    <h3 class="project-title">Foro de compra y venta</h3>
+                    <p class="project-stack">Stack: Python, plantillas HTML, almacenamiento estructurado</p>
+                  </header>
+                  <p>
+                    Foro desarrollado en Python con sistema de publicaciones, usuarios y comentarios. Diseñado para escalar con futuras funciones de moderación y reputación.
+                  </p>
+                  <ul class="project-highlights">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Gestión de usuarios con perfiles y roles básicos.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Publicación de avisos clasificados y filtrado por categorías.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Registro de actividad y base para nuevas políticas de seguridad.</span>
+                    </li>
+                  </ul>
+                  <div class="project-meta">
+                    <span class="project-category">
+                      <ion-icon name="cube-outline"></ion-icon>
+                      Aplicación backend
+                    </span>
+                    <span class="project-link muted">
+                      <ion-icon name="lock-closed-outline"></ion-icon>
+                      Repositorio privado
+                    </span>
+                  </div>
+                </article>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="ciberseguridad">
+                <article class="project-card">
+                  <header class="project-card-header">
+                    <p class="project-context">Proyecto académico</p>
+                    <h3 class="project-title">Prototipo de ransomware educativo</h3>
+                    <p class="project-stack">Stack: Python, Linux, cifrado simétrico</p>
+                  </header>
+                  <p>
+                    Desarrollo de un prototipo de ransomware exclusivamente para laboratorios educativos. Permite estudiar la cadena de ataque y diseñar defensas efectivas.
+                  </p>
+                  <ul class="project-highlights">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Simulación de flujo de infección y cifrado en entornos controlados.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Documentación de riesgos, indicadores y contramedidas.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Uso responsable para concientización y capacitación.</span>
+                    </li>
+                  </ul>
+                  <div class="project-meta">
+                    <span class="project-category">
+                      <ion-icon name="flask-outline"></ion-icon>
+                      Laboratorio educativo
+                    </span>
+                    <span class="project-link muted">
+                      <ion-icon name="shield-half-outline"></ion-icon>
+                      Ejecutado en entornos de prueba
+                    </span>
+                  </div>
+                </article>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="ciberseguridad">
+                <article class="project-card">
+                  <header class="project-card-header">
+                    <p class="project-context">Investigación y laboratorios</p>
+                    <h3 class="project-title">Laboratorios de exploits y vulnerabilidades</h3>
+                    <p class="project-stack">Stack: Python, Bash, herramientas de CTF y VMs</p>
+                  </header>
+                  <p>
+                    Creación y análisis de exploits y pruebas de concepto en CTFs y entornos de laboratorio. Enfocado en entender impacto, mitigaciones y reporte responsable.
+                  </p>
+                  <ul class="project-highlights">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Ejercicios de enumeración, explotación y post-explotación.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Documentación técnica y prácticas de red teaming junior.</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Mentalidad crítica para evaluar riesgos y priorizar defensas.</span>
+                    </li>
+                  </ul>
+                  <div class="project-meta">
+                    <span class="project-category">
+                      <ion-icon name="bug-outline"></ion-icon>
+                      Investigación
+                    </span>
+                    <span class="project-link muted">
+                      <ion-icon name="pulse-outline"></ion-icon>
+                      Laboratorios en curso
+                    </span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contacto">
+          <header>
+            <h2 class="h2 article-title">Contacto</h2>
+          </header>
+
+          <section class="contact-cta">
+            <p>
+              Colaboro en proyectos backend y de ciberseguridad desde Córdoba para clientes locales e internacionales. Disponible para roles freelance o part-time en desarrollo, pentesting junior y soporte a equipos SOC.
+            </p>
+            <div class="cta-buttons">
+              <a class="contact-button" href="mailto:brunosegura755@gmail.com">
+                <ion-icon name="mail-outline"></ion-icon>
+                Enviar email
+              </a>
+              <a class="contact-button ghost" href="tel:+54351155301904">
+                <ion-icon name="call-outline"></ion-icon>
+                Llamar
+              </a>
+            </div>
+          </section>
+
+          <section class="contact-info-block">
+            <h3 class="h3">Disponibilidad</h3>
+            <ul class="contact-highlights">
+              <li>
+                <ion-icon name="terminal-outline"></ion-icon>
+                <span>Proyectos backend con foco en seguridad y automatización.</span>
+              </li>
+              <li>
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>Participación en equipos de ciberseguridad ofensiva/defensiva en formación.</span>
+              </li>
+              <li>
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                <span>Charlas, mentorías y colaboración con comunidades técnicas.</span>
+              </li>
+            </ul>
+            <p class="note">TODO: agregar enlaces públicos a LinkedIn y GitHub cuando estén disponibles.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="js/ionicons.esm.js"></script>
+    <script nomodule src="js/ionicons.js"></script>
+  </body>
+</html>
