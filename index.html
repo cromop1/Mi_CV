@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -11,35 +11,48 @@
     <title>Bruno Segura | CV Ciberseguridad</title>
 
     <link rel="shortcut icon" href="" type="favicon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <meta name="theme-color" content="#0c192c" />
+    <!-- Added Font Awesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Updated theme color to black/red scheme -->
+    <meta name="theme-color" content="#000000" />
   </head>
 
   <body class="intro-active">
+    <!-- Enhanced intro overlay with Kali Linux and Python logos -->
     <div class="intro-overlay active" data-intro-overlay>
-      <div class="intro-icon-stack only-icons">
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-          class="intro-icon linux"
-          alt="Linux logo"
-          loading="lazy"
-        />
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-          class="intro-icon python"
-          alt="Python logo"
-          loading="lazy"
-        />
+      <div class="intro-content">
+        <div class="intro-logo-container">
+          <!-- Kali Linux Logo -->
+          <img
+            src="https://www.kali.org/images/kali-dragon-icon.svg"
+            class="intro-logo kali-logo"
+            alt="Kali Linux logo"
+            loading="eager"
+          />
+          <!-- Python Logo -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            class="intro-logo python-logo"
+            alt="Python logo"
+            loading="eager"
+          />
+        </div>
+        <div class="intro-text">
+          <h1 class="glitch-text" data-text=""></h1>
+          <p class="intro-subtitle">CYBERSECURITY & BACKEND DEVELOPER</p>
+        </div>
       </div>
     </div>
+
     <main>
-      <aside class="sidebar" data-sidebar>
+      <aside class="sidebar">
         <div class="sidebar-info">
           <figure class="avatar-box">
             <div style="display: grid">
@@ -54,10 +67,6 @@
             <p class="tagline">Backend Developer (Python/Django) · Ciberseguridad · Pentesting en formación</p>
           </div>
 
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Ver datos de contacto</span>
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
         </div>
 
         <div class="sidebar-info_more">
@@ -65,8 +74,9 @@
 
           <ul class="contacts-list">
             <li class="contact-item">
+              <!-- Using Font Awesome icons -->
               <div class="icon-box">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/gmail.svg" alt="Icono mail" class="contact-icon" loading="lazy" />
+                <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Email</p>
@@ -76,7 +86,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/signal.svg" alt="Icono teléfono" class="contact-icon" loading="lazy" />
+                <i class="fas fa-phone-alt"></i>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Teléfono</p>
@@ -86,7 +96,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/googlecalendar.svg" alt="Icono calendario" class="contact-icon" loading="lazy" />
+                <i class="fas fa-birthday-cake"></i>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Cumpleaños</p>
@@ -96,7 +106,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/googlemaps.svg" alt="Icono ubicación" class="contact-icon" loading="lazy" />
+                <i class="fas fa-map-marker-alt"></i>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Ubicación</p>
@@ -108,13 +118,17 @@
           <div class="separator"></div>
 
           <ul class="social-list">
-            <li class="social-item placeholder">
-              <ion-icon name="logo-linkedin"></ion-icon>
-              <span>LinkedIn · disponible a solicitud</span>
+            <li class="social-item">
+              <a class="social-link" href="https://www.linkedin.com/in/bruno-segura-1967a0315/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
             </li>
-            <li class="social-item placeholder">
-              <ion-icon name="logo-github"></ion-icon>
-              <span>GitHub · repositorios privados académicos</span>
+            <li class="social-item">
+              <a class="social-link" href="https://github.com/cromop1" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -125,31 +139,31 @@
           <ul class="navbar-list">
             <li class="navbar-item">
               <button class="navbar-link active" data-nav-link data-target="perfil">
-                <ion-icon name="person-outline"></ion-icon>
+                <i class="fas fa-user"></i>
                 <span>Perfil</span>
               </button>
             </li>
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link data-target="trayectoria">
-                <ion-icon name="school-outline"></ion-icon>
+                <i class="fas fa-graduation-cap"></i>
                 <span>Trayectoria</span>
               </button>
             </li>
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link data-target="habilidades">
-                <ion-icon name="shield-outline"></ion-icon>
+                <i class="fas fa-shield-alt"></i>
                 <span>Certificados</span>
               </button>
             </li>
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link data-target="proyectos">
-                <ion-icon name="code-slash-outline"></ion-icon>
+                <i class="fas fa-code"></i>
                 <span>Proyectos</span>
               </button>
             </li>
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link data-target="contacto">
-                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <i class="fas fa-comment-dots"></i>
                 <span>Contacto</span>
               </button>
             </li>
@@ -217,8 +231,6 @@
             </article>
           </section>
 
-
-
           <section class="subpage-grid" aria-label="Subpáginas destacadas">
             <div class="subpage-grid-title">
               <h3 class="h3">Atajos</h3>
@@ -226,21 +238,21 @@
             </div>
             <div class="subpage-grid-list">
               <button class="subpage-card" type="button" data-subpage-target="trayectoria">
-                <ion-icon name="book-outline"></ion-icon>
+                <i class="fas fa-book"></i>
                 <div>
                   <p class="subpage-label">Formación y actividades</p>
                   <p class="subpage-text">Resumen académico y experiencias colaborativas.</p>
                 </div>
               </button>
               <button class="subpage-card" type="button" data-subpage-target="habilidades">
-                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <i class="fas fa-shield-check"></i>
                 <div>
                   <p class="subpage-label">Habilidades y certificaciones</p>
                   <p class="subpage-text">Stack técnico, competencias y cursos clave.</p>
                 </div>
               </button>
               <button class="subpage-card" type="button" data-subpage-target="proyectos">
-                <ion-icon name="code-slash-outline"></ion-icon>
+                <i class="fas fa-code"></i>
                 <div>
                   <p class="subpage-label">Proyectos destacados</p>
                   <p class="subpage-text">Apps reales, laboratorios y prototipos.</p>
@@ -254,7 +266,7 @@
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <ion-icon name="server-outline"></ion-icon>
+                  <i class="fas fa-server"></i>
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Backend seguro con Python/Django</h4>
@@ -265,7 +277,7 @@
               </li>
               <li class="service-item">
                 <div class="service-icon-box">
-                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <i class="fas fa-lock"></i>
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Hardening y seguridad defensiva</h4>
@@ -276,7 +288,7 @@
               </li>
               <li class="service-item">
                 <div class="service-icon-box">
-                  <ion-icon name="flash-outline"></ion-icon>
+                  <i class="fas fa-bolt"></i>
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Pentesting en formación</h4>
@@ -287,7 +299,7 @@
               </li>
               <li class="service-item">
                 <div class="service-icon-box">
-                  <ion-icon name="code-outline"></ion-icon>
+                  <i class="fas fa-code"></i>
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Automatización con scripting</h4>
@@ -303,19 +315,19 @@
             <h3 class="h3 service-title">Intereses profesionales</h3>
             <ul class="tag-list icon-list">
               <li>
-                <ion-icon name="shield-outline"></ion-icon>
+                <i class="fas fa-shield"></i>
                 <span>Ciberseguridad ofensiva (pentesting, CTFs, explotación controlada)</span>
               </li>
               <li>
-                <ion-icon name="terminal-outline"></ion-icon>
+                <i class="fas fa-terminal"></i>
                 <span>Automatización con Python y scripting para equipos de seguridad</span>
               </li>
               <li>
-                <ion-icon name="construct-outline"></ion-icon>
+                <i class="fas fa-tools"></i>
                 <span>Desarrollo de herramientas internas (scanners, dashboards, bots)</span>
               </li>
               <li>
-                <ion-icon name="sparkles-outline"></ion-icon>
+                <i class="fas fa-star"></i>
                 <span>Aprendizaje continuo en certificaciones de ciberseguridad</span>
               </li>
             </ul>
@@ -341,15 +353,15 @@
                 </p>
                 <ul class="timeline-details">
                   <li>
-                    <ion-icon name="play-outline"></ion-icon>
+                    <i class="fas fa-play"></i>
                     <span>Proyectos integradores y trabajos prácticos que resuelven necesidades reales.</span>
                   </li>
                   <li>
-                    <ion-icon name="people-outline"></ion-icon>
+                    <i class="fas fa-people-arrows"></i>
                     <span>Trabajo colaborativo aplicando control de versiones, documentación y retroalimentación constante.</span>
                   </li>
                   <li>
-                    <ion-icon name="layers-outline"></ion-icon>
+                    <i class="fas fa-layer-group"></i>
                     <span>Base sólida en programación estructurada, orientación a objetos y bases de datos.</span>
                   </li>
                 </ul>
@@ -392,18 +404,18 @@
                 </p>
               </li>
               <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ruta hacia ciberseguridad</h4>
-              <span>Actual</span>
-              <p class="timeline-text">
-                Construcción de un portfolio orientado a futuros roles como pentester, analista SOC o desarrollador backend con foco en seguridad ofensiva y defensiva.
-              </p>
-              <p class="timeline-text highlight">
-                Meta: ingresar a una universidad con orientación en ciberseguridad o integrar un departamento gubernamental de seguridad, infraestructura, investigación o inteligencia.
-              </p>
-            </li>
-          </ol>
-        </section>
-      </article>
+                <h4 class="h4 timeline-item-title">Ruta hacia ciberseguridad</h4>
+                <span>Actual</span>
+                <p class="timeline-text">
+                  Construcción de un portfolio orientado a futuros roles como pentester, analista SOC o desarrollador backend con foco en seguridad ofensiva y defensiva.
+                </p>
+                <p class="timeline-text highlight">
+                  Meta: ingresar a una universidad con orientación en ciberseguridad o integrar un departamento gubernamental de seguridad, infraestructura, investigación o inteligencia.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
 
         <article class="skills-page" data-page="habilidades">
           <header>
@@ -412,7 +424,6 @@
 
           <section class="certifications">
             <div class="title-wrapper">
-              <img class="section-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg" alt="Icono certificaciones" loading="lazy" />
               <div>
                 <h3 class="h3">Certificaciones y cursos</h3>
                 <p>Resumen ejecutivo de las credenciales que respaldan mi perfil. Cada tarjeta incluye acceso directo a la evidencia.</p>
@@ -424,7 +435,7 @@
                 <div class="cert-card-header">
                   <img class="cert-logo" src="./images/MundosE.jpg" alt="Icono Mundos E UTN" loading="lazy" />
                   <div>
-                    <p class="cert-provider">Mundos E · UTN</p>
+                <p class="cert-provider">Mundos E · UTN</p>
                     <h4>Diplomatura en Ciberseguridad</h4>
                   </div>
                 </div>
@@ -486,7 +497,7 @@
                 <div class="cert-proof">
                   <ion-icon name="link-outline"></ion-icon>
                   <span>
-                    Evidencia incluida en la credencial pública de
+                    Evidencia incluida en la credencial p?blica de
                     <a
                       href="https://www.linkedin.com/in/bruno-segura-1967a0315/details/certifications/126133942/multiple-media-viewer/?profileId=ACoAAFAHTwIBwn2pZ30IB3lQM_euvJfaroOJLSc&amp;treasuryMediaId=1758915241764&amp;type=DOCUMENT"
                       target="_blank"
@@ -636,192 +647,162 @@
             </ul>
           </section>
         </article>
-
+        <!-- Mejorando significativamente la sección de proyectos con tarjetas profesionales -->
         <article class="portfolio" data-page="proyectos">
           <header>
-            <h2 class="h2 article-title">Proyectos</h2>
+            <h2 class="h2 article-title">Proyectos destacados</h2>
           </header>
 
           <section class="projects">
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>Todos</div>
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-              <ul class="select-list">
-
-                <li class="select-item">
-                  <button data-select-item>Back-end</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Ciberseguridad</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="filter-list">
-
-              <li class="filter-item">
-                <button data-filter-btn>Back-end</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Ciberseguridad</button>
-              </li>
-            </ul>
-
             <ul class="project-list">
-              <li class="project-item active" data-filter-item data-category="back-end">
-                <article class="project-card">
-                  <header class="project-card-header">
-                    <p class="project-context">Proyecto real · Django</p>
-                    <h3 class="project-title">Sabueso Feliz – Sistema de gestión para veterinaria</h3>
-                    <p class="project-stack">Stack: Django, Python, HTML, CSS, base de datos relacional</p>
-                  </header>
-                  <p>
-                    Aplicación web completa para administrar una veterinaria con foco en disponibilidad, seguridad de datos clínicos y experiencia intuitiva para el personal.
-                  </p>
-                  <ul class="project-highlights">
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Registro detallado de pacientes (mascotas) y dueños.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Gestión de turnos, agenda, recordatorios y alertas.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Historial clínico, inventario de fármacos e insumos.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Funciones administrativas y reportes para la operación diaria.</span>
-                    </li>
-                  </ul>
-                  <div class="project-meta">
-                    <span class="project-category">
-                      <ion-icon name="globe-outline"></ion-icon>
-                      Aplicación web
-                    </span>
-                    <a href="https://sabuesofeliz.sbs" target="_blank" rel="noreferrer" class="project-link">
-                      <ion-icon name="open-outline"></ion-icon>
-                      Visitar proyecto
-                    </a>
+              <li class="project-item active" data-filter-item data-category="web">
+                <div class="project-card">
+                  <div class="project-img-wrapper">
+                    <figure class="project-img">
+                      <img src="https://i.imgur.com/uYeDNLF.png" alt="Sabueso Feliz" loading="lazy">
+                      <div class="project-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                      </div>
+                    </figure>
                   </div>
-                </article>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <div>
+                        <span class="project-category"><i class="fas fa-globe"></i> Producción</span>
+                        <h3 class="project-title">Sabueso Feliz</h3>
+                        <p class="project-stack">Django · Python · PostgreSQL · Despliegue</p>
+                      </div>
+                      <a href="https://sabuesofeliz.sbs" target="_blank" rel="noopener" class="project-link-btn">
+                        <i class="fas fa-arrow-right"></i>
+                      </a>
+                    </div>
+                    <p class="project-description">
+                      Plataforma web completa para veterinaria con gestión de clientes, historial médico de mascotas, sistema de citas y automatización de notificaciones por email.
+                    </p>
+                    <ul class="project-highlights">
+                      <li><i class="fas fa-check-circle"></i> Panel administrativo personalizado con Django Admin</li>
+                      <li><i class="fas fa-check-circle"></i> Sistema de autenticación y permisos por roles</li>
+                      <li><i class="fas fa-check-circle"></i> Base de datos relacional con PostgreSQL</li>
+                      <li><i class="fas fa-check-circle"></i> Despliegue en producción con manejo de estáticos</li>
+                    </ul>
+                    <div class="project-tags">
+                      <span class="tag">Backend</span>
+                      <span class="tag">Full-Stack</span>
+                      <span class="tag">Real World</span>
+                    </div>
+                  </div>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="back-end">
-                <article class="project-card">
-                  <header class="project-card-header">
-                    <p class="project-context">Proyecto personal</p>
-                    <h3 class="project-title">Foro de compra y venta</h3>
-                    <p class="project-stack">Stack: Python, plantillas HTML, almacenamiento estructurado</p>
-                  </header>
-                  <p>
-                    Foro desarrollado en Python con sistema de publicaciones, usuarios y comentarios. Diseñado para escalar con futuras funciones de moderación y reputación.
-                  </p>
-                  <ul class="project-highlights">
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Gestión de usuarios con perfiles y roles básicos.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Publicación de avisos clasificados y filtrado por categorías.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Registro de actividad y base para nuevas políticas de seguridad.</span>
-                    </li>
-                  </ul>
-                  <div class="project-meta">
-                    <span class="project-category">
-                      <ion-icon name="cube-outline"></ion-icon>
-                      Aplicación backend
-                    </span>
-                    <span class="project-link muted">
-                      <ion-icon name="lock-closed-outline"></ion-icon>
-                      Repositorio privado
-                    </span>
+              <li class="project-item active" data-filter-item data-category="security">
+                <div class="project-card">
+                  <div class="project-img-wrapper">
+                    <figure class="project-img">
+                      <img src="https://i.imgur.com/w3Ra51s.png" alt="Campaña Phishing" loading="lazy">
+                      <div class="project-overlay">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                    </figure>
                   </div>
-                </article>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <div>
+                        <span class="project-category"><i class="fas fa-user-secret"></i> Seguridad Ofensiva</span>
+                        <h3 class="project-title">Campaña de Phishing Controlado</h3>
+                        <p class="project-stack">Python · Social Engineering · Awareness</p>
+                      </div>
+                    </div>
+                    <p class="project-description">
+                      Simulación profesional de campaña de phishing para concientización sobre ingeniería social y protección de credenciales en entornos educativos.
+                    </p>
+                    <ul class="project-highlights">
+                      <li><i class="fas fa-check-circle"></i> Diseño de emails convincentes con técnicas de SE</li>
+                      <li><i class="fas fa-check-circle"></i> Landing page falsa para captura educativa</li>
+                      <li><i class="fas fa-check-circle"></i> Análisis de tasas de apertura y click-through</li>
+                      <li><i class="fas fa-check-circle"></i> Documentación de buenas prácticas para usuarios</li>
+                    </ul>
+                    <div class="project-tags">
+                      <span class="tag">Phishing</span>
+                      <span class="tag">Social Eng</span>
+                      <span class="tag">Awareness</span>
+                    </div>
+                  </div>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="ciberseguridad">
-                <article class="project-card">
-                  <header class="project-card-header">
-                    <p class="project-context">Proyecto académico</p>
-                    <h3 class="project-title">Prototipo de ransomware educativo</h3>
-                    <p class="project-stack">Stack: Python, Linux, cifrado simétrico</p>
-                  </header>
-                  <p>
-                    Desarrollo de un prototipo de ransomware exclusivamente para laboratorios educativos. Permite estudiar la cadena de ataque y diseñar defensas efectivas.
-                  </p>
-                  <ul class="project-highlights">
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Simulación de flujo de infección y cifrado en entornos controlados.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Documentación de riesgos, indicadores y contramedidas.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Uso responsable para concientización y capacitación.</span>
-                    </li>
-                  </ul>
-                  <div class="project-meta">
-                    <span class="project-category">
-                      <ion-icon name="flask-outline"></ion-icon>
-                      Laboratorio educativo
-                    </span>
-                    <span class="project-link muted">
-                      <ion-icon name="shield-half-outline"></ion-icon>
-                      Ejecutado en entornos de prueba
-                    </span>
+              <li class="project-item active" data-filter-item data-category="tools">
+                <div class="project-card">
+                  <div class="project-img-wrapper">
+                    <figure class="project-img">
+                      <img src="https://i.imgur.com/I3Aejds.png" alt="Scripts Python" loading="lazy">
+                      <div class="project-overlay">
+                        <i class="fas fa-terminal"></i>
+                      </div>
+                    </figure>
                   </div>
-                </article>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <div>
+                        <span class="project-category"><i class="fas fa-cogs"></i> Automatización</span>
+                        <h3 class="project-title">Suite de Scripts Python</h3>
+                        <p class="project-stack">Python · Automation · CLI Tools</p>
+                      </div>
+                      <a href="https://github.com/cromop1" target="_blank" rel="noopener" class="project-link-btn">
+                        <i class="fas fa-arrow-right"></i>
+                      </a>
+                    </div>
+                    <p class="project-description">
+                      Colección de herramientas de línea de comandos para auditorías de seguridad, scraping de inteligencia y automatización de tareas operativas diarias.
+                    </p>
+                    <ul class="project-highlights">
+                      <li><i class="fas fa-check-circle"></i> Script de análisis de logs con detección de anomalías</li>
+                      <li><i class="fas fa-check-circle"></i> Web scraper para recolección de threat intelligence</li>
+                      <li><i class="fas fa-check-circle"></i> Utilidades para gestión de archivos y reportes</li>
+                      <li><i class="fas fa-check-circle"></i> Interfaz CLI con argparse y rich para output</li>
+                    </ul>
+                    <div class="project-tags">
+                      <span class="tag">Python</span>
+                      <span class="tag">CLI</span>
+                      <span class="tag">Automation</span>
+                    </div>
+                  </div>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="ciberseguridad">
-                <article class="project-card">
-                  <header class="project-card-header">
-                    <p class="project-context">Investigación y laboratorios</p>
-                    <h3 class="project-title">Laboratorios de exploits y vulnerabilidades</h3>
-                    <p class="project-stack">Stack: Python, Bash, herramientas de CTF y VMs</p>
-                  </header>
-                  <p>
-                    Creación y análisis de exploits y pruebas de concepto en CTFs y entornos de laboratorio. Enfocado en entender impacto, mitigaciones y reporte responsable.
-                  </p>
-                  <ul class="project-highlights">
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Ejercicios de enumeración, explotación y post-explotación.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Documentación técnica y prácticas de red teaming junior.</span>
-                    </li>
-                    <li>
-                      <ion-icon name="checkmark-circle-outline"></ion-icon>
-                      <span>Mentalidad crítica para evaluar riesgos y priorizar defensas.</span>
-                    </li>
-                  </ul>
-                  <div class="project-meta">
-                    <span class="project-category">
-                      <ion-icon name="bug-outline"></ion-icon>
-                      Investigación
-                    </span>
-                    <span class="project-link muted">
-                      <ion-icon name="pulse-outline"></ion-icon>
-                      Laboratorios en curso
-                    </span>
+              <li class="project-item active" data-filter-item data-category="labs">
+                <div class="project-card">
+                  <div class="project-img-wrapper">
+                    <figure class="project-img">
+                      <img src="https://camo.githubusercontent.com/9ddad33b2cbcff72dcc2778857b20da00cca5276d32fa12957dd4f625e12c905/68747470733a2f2f692e696d6775722e636f6d2f6e42567a6b34422e706e67" alt="Labs CTF" loading="lazy">
+                      <div class="project-overlay">
+                        <i class="fas fa-flag"></i>
+                      </div>
+                    </figure>
                   </div>
-                </article>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <div>
+                        <span class="project-category"><i class="fas fa-laptop-code"></i> Pentesting Lab</span>
+                        <h3 class="project-title">Laboratorio CTF Personal</h3>
+                        <p class="project-stack">Kali Linux · VirtualBox · Metasploit · Burp Suite</p>
+                      </div>
+                    </div>
+                    <p class="project-description">
+                      Entorno virtualizado de práctica con máquinas vulnerables para perfeccionar técnicas de explotación, análisis forense y respuesta a incidentes.
+                    </p>
+                    <ul class="project-highlights">
+                      <li><i class="fas fa-check-circle"></i> Configuración de red aislada con múltiples VMs</li>
+                      <li><i class="fas fa-check-circle"></i> Práctica de enumeración y escaneo de puertos</li>
+                      <li><i class="fas fa-check-circle"></i> Explotación de vulnerabilidades conocidas (OWASP Top 10)</li>
+                      <li><i class="fas fa-check-circle"></i> Documentación de hallazgos en formato profesional</li>
+                    </ul>
+                    <div class="project-tags">
+                      <span class="tag">CTF</span>
+                      <span class="tag">Pentesting</span>
+                      <span class="tag">Labs</span>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </section>
@@ -832,46 +813,71 @@
             <h2 class="h2 article-title">Contacto</h2>
           </header>
 
-          <section class="contact-cta">
-            <p>
-              Colaboro en proyectos backend y de ciberseguridad desde Córdoba para clientes locales e internacionales. Disponible para roles freelance o part-time en desarrollo, pentesting junior y soporte a equipos SOC.
+                                                          <section class="contact-direct">
+            <p class="contact-lead">
+              ¿Necesitas referencias, una reunión técnica o coordinar una prueba de concepto? Estos son mis canales directos;
+              respondo rápido y adapto el medio a tu preferencia.
             </p>
-            <div class="cta-buttons">
-              <a class="contact-button" href="mailto:brunosegura755@gmail.com">
-                <ion-icon name="mail-outline"></ion-icon>
-                Enviar email
-              </a>
-              <a class="contact-button ghost" href="tel:+54351155301904">
-                <ion-icon name="call-outline"></ion-icon>
-                Llamar
-              </a>
-            </div>
-          </section>
 
-          <section class="contact-info-block">
-            <h3 class="h3">Disponibilidad</h3>
-            <ul class="contact-highlights">
-              <li>
-                <ion-icon name="terminal-outline"></ion-icon>
-                <span>Proyectos backend con foco en seguridad y automatización.</span>
-              </li>
-              <li>
-                <ion-icon name="shield-checkmark-outline"></ion-icon>
-                <span>Participación en equipos de ciberseguridad ofensiva/defensiva en formación.</span>
-              </li>
-              <li>
-                <ion-icon name="chatbubbles-outline"></ion-icon>
-                <span>Charlas, mentorías y colaboración con comunidades técnicas.</span>
-              </li>
-            </ul>
-            <p class="note">TODO: agregar enlaces públicos a LinkedIn y GitHub cuando estén disponibles.</p>
+            <div class="contact-card-grid">
+              <article class="contact-card email">
+                <div class="contact-card-icon">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="contact-card-body">
+                  <p class="contact-label">Email principal</p>
+                  <a class="contact-link" href="mailto:brunosegura755@gmail.com">brunosegura755@gmail.com</a>
+                  <p class="contact-note">Respondo en menos de 24 h con agenda y próximos pasos.</p>
+                </div>
+              </article>
+
+              <article class="contact-card whatsapp">
+                <div class="contact-card-icon">
+                  <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="contact-card-body">
+                  <p class="contact-label">WhatsApp / Teléfono</p>
+                  <a class="contact-link" href="https://wa.me/54351155301904" target="_blank" rel="noopener">+54 351 155301904</a>
+                  <p class="contact-note">Disponible 9:00 - 19:00 (GMT-3) para coordinación ágil.</p>
+                </div>
+              </article>
+
+              <article class="contact-card linkedin">
+                <div class="contact-card-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-card-body">
+                  <p class="contact-label">LinkedIn</p>
+                  <a class="contact-link" href="https://www.linkedin.com/in/bruno-segura-1967a0315/" target="_blank" rel="noopener">linkedin.com/in/bruno-segura-1967a0315</a>
+                  <p class="contact-note">Mensajes con contexto del proyecto o búsquedas abiertas.</p>
+                </div>
+              </article>
+
+              <article class="contact-card github">
+                <div class="contact-card-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-card-body">
+                  <p class="contact-label">GitHub</p>
+                  <a class="contact-link" href="https://github.com/cromop1" target="_blank" rel="noopener">github.com/cromop1</a>
+                  <p class="contact-note">Repos, automatizaciones y soporte para contribuciones.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="contact-availability">
+              <p>
+                Radicado en Córdoba, Argentina. Coordino reuniones virtuales (Meet/Zoom) y envíos de documentación firmada. Si
+                preferís otro canal, avísame en el primer mensaje.
+              </p>
+            </div>
           </section>
         </article>
       </div>
     </main>
 
-    <script src="js/script.js"></script>
-    <script type="module" src="js/ionicons.esm.js"></script>
-    <script nomodule src="js/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
